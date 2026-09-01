@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="#3987e5,#199e70,#c98500,#008300,#9085e9,#e66767,#d55181,#d95926">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PulseIQ — Political & Civic Influence Intelligence</title>
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <!-- InfluenceIQ suite landing (module picker) — shown in body.mode-suite -->
+  <div id="suite"><!-- suite landing injected --></div>
+
+  <div id="app">
+    <aside id="sidebar">
+      <div class="brand" id="brand">
+        <div class="brand-mark" id="brand-mark"><!-- wave injected --></div>
+        <div class="brand-text">
+          <div class="brand-name" id="brand-name">PulseIQ</div>
+          <div class="brand-sub" id="brand-sub">Political &amp; Civic Influence</div>
+        </div>
+      </div>
+      <button id="to-suite" class="to-suite" title="Back to the InfluenceIQ module suite">
+        <span class="ts-suite">InfluenceIQ</span><span class="ts-arrow">↩ suite</span>
+      </button>
+      <nav id="nav"><!-- nav items injected --></nav>
+      <div class="sidebar-foot">
+        <div class="foot-note">Confidence · provenance · governance, surfaced everywhere.</div>
+      </div>
+    </aside>
+
+    <main id="main">
+      <header id="topbar">
+        <div id="crumb"></div>
+        <div class="top-right">
+          <div id="alertbell" class="alertbell"><!-- alert bell injected --></div>
+          <div class="env-badge" title="This prototype runs on baked-in multi-campaign data. The live Neo4j API upgrades it per campaign when connected.">
+            <span class="dot amber"></span> Prototype · static data
+          </div>
+        </div>
+      </header>
+      <div id="campaignbar" class="campaignbar">
+        <span class="cb-label">Campaign</span>
+        <div id="switcher" class="switcher"><!-- campaign switcher injected --></div>
+      </div>
+      <section id="view"><!-- view injected --></section>
+    </main>
+  </div>
+
+  <div id="drawer-scrim" class="scrim hidden"></div>
+  <aside id="drawer" class="drawer hidden"><div id="drawer-body"></div></aside>
+
+  <script src="data.js"></script>
+  <script src="https://unpkg.com/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
