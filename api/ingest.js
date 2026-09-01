@@ -37,7 +37,7 @@ module.exports = async (req, res) => {
     return;
   }
   try {
-    const { ingestCampaign } = await import('../../graph/scripts/ingest/run.mjs');
+    const { ingestCampaign } = await import( '../ingest/run.mjs');
     const summary = await ingestCampaign({ topic, campaignId, geo, issueId });
     res.status(summary.ok ? 200 : 502).json(summary);
   } catch (err) {
