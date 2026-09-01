@@ -94,7 +94,7 @@ module.exports = async (req, res) => {
     // campaign filter passed as a bound parameter (never interpolated); defaults to CP-11
     const body = { statement: spec.cy };
     if (spec.cid) {
-      const cid = (req.query && req.query.c) || "CP-11";
+      const cid = (req.query && req.query.c) ;
       body.parameters = { cid: String(cid) };
     }
     const auth = Buffer.from(user + ":" + pass).toString("base64");
